@@ -33,4 +33,6 @@ jobs:
               - 'flight-data/routes/openapi.yaml'
               - 'flight-data/routes/kong/**'
   reusable-workflow: 
+    needs: has-changes
+    if: ${{ needs.has-changes.outputs.are-changes == 'true' }}
     uses: deirdre-anderson/KongAir/.github/workflows/shared-stage-changes-for-team.yaml@main
