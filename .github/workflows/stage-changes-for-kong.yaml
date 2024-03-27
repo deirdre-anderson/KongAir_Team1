@@ -12,7 +12,7 @@ on:
 jobs:
 
   has-changes:
-    name: Have specs, configurations, or pipeline files changed?
+    name: Have specs, configurations, or pipeline files changed
     runs-on: ubuntu-latest
 
     outputs:
