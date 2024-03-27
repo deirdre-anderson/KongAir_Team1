@@ -32,5 +32,5 @@ jobs:
               - 'flight-data/flights/kong/**'
               - 'flight-data/routes/openapi.yaml'
               - 'flight-data/routes/kong/**'
-      - name: Convert OAS to Kong Configuration
-        uses: deirdre-anderson/KongAir/.github/worflows/shared-stage-changes-for-team.yaml@main
+  reusable-workflow: 
+    uses: deirdre-anderson/KongAir/.github/workflows/shared-stage-changes-for-team.yaml@main
