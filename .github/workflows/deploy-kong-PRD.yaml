@@ -1,0 +1,15 @@
+name: Deploy Kong changes to PRD
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - PRD/kong/kong.yaml
+      - .github/workflows/deploy-kong-PRD.yaml
+
+jobs:
+
+jobs:
+  reusable-workflow: 
+    uses: deirdre-anderson/KongAir/.github/workflows/deploy-kong-PRD.yaml@main
