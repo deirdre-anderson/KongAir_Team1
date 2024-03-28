@@ -4,6 +4,7 @@ go-apiops*/
 deck-*/
 kong-quickstart.*
 kong.env
-kong.yaml
+*/kong.yaml
 config/kong/.generated/kong.yaml
+PRD/kong/kong.yaml
 *.pid
