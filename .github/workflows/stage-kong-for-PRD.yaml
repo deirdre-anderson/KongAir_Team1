@@ -12,7 +12,7 @@ on:
 jobs:
   reusable-workflow: 
     uses: deirdre-anderson/KongAir/.github/workflows/stage-kong-for-PRD.yaml@main
-    with: 
+    env: 
       KONNECT_PAT: ${{ secrets.KONNECT_PAT }}
 
 
