@@ -8,6 +8,21 @@ services:
   port: 8080
   protocol: http
   routes:
+  - id: 7b2dbd94-ec5b-5ae8-b6d5-4c8b16ce0b06
+    methods:
+    - GET
+    name: flights-service_get-flights
+    paths:
+    - ~/flights$
+    plugins: []
+    regex_priority: 200
+    strip_path: false
+    tags:
+    - flight-data
+    - deck
+    - file
+    - add-tags
+    - repo-managed
   - id: 3210c3ed-9976-500d-ac03-07eaac972ad0
     methods:
     - GET
@@ -31,21 +46,6 @@ services:
     - ~/flights/(?<flightnumber>[^#?/]+)/details$
     plugins: []
     regex_priority: 100
-    strip_path: false
-    tags:
-    - flight-data
-    - deck
-    - file
-    - add-tags
-    - repo-managed
-  - id: 7b2dbd94-ec5b-5ae8-b6d5-4c8b16ce0b06
-    methods:
-    - GET
-    name: flights-service_get-flights
-    paths:
-    - ~/flightz$
-    plugins: []
-    regex_priority: 200
     strip_path: false
     tags:
     - flight-data
