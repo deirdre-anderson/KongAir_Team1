@@ -5,4 +5,5 @@ deck-*/
 kong-quickstart.*
 kong.env
 kong.yaml
+config/kong/.generated/kong.yaml
 *.pid
