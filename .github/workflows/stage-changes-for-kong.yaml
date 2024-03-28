@@ -7,7 +7,7 @@ on:
       - workflow/**
     paths-ignore:
       - 'PRD/**'
-      - 'platform/kong/.generated/kong.yaml'
+      - 'config/kong/.generated/kong.yaml'
 
 jobs:
 
@@ -30,8 +30,7 @@ jobs:
               - '.github/workflows/stage-changes-for-kong.yaml'
               - 'flight-data/flights/openapi.yaml'
               - 'flight-data/flights/kong/**'
-              - 'flight-data/routes/openapi.yaml'
-              - 'flight-data/routes/kong/**'
+
   reusable-workflow: 
     needs: has-changes
     if: ${{ needs.has-changes.outputs.are-changes == 'true' }}
